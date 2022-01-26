@@ -20,6 +20,12 @@ class App extends React.Component {
       {name: 'playlistName3', artist: 'playlistArtist3', album: 'playlistAlbum3', id: 6}]
     }
   }
+
+  addTrack(track) {
+      
+  }
+
+
   render() {
     return (
       <div>
@@ -28,7 +34,7 @@ class App extends React.Component {
              <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.SearchResults} />
-            <Playlist />
+            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks}/>
           </div>
         </div>
       </div>
